@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="from time import time
+begin = time()
+print(&#34;start timing...&#34;)
+
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
+# Plot tools
+impo">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Terry Lu">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Coding Demonstration">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="from time import time
+begin = time()
+print(&#34;start timing...&#34;)
+
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
+# Plot tools
+impo">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Terry&#39;s blog">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>Coding Demonstration - Terry&#39;s blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Click here for main page</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/2054626530/2054626530.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Coding Demonstration</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-09-02
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <pre><code class="python">
+<span class="keyword">from</span> time <span class="keyword">import</span> time
+begin = time()
+print(<span class="string">"start timing..."</span>)
+
+<span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+<span class="keyword">import</span> numpy <span class="keyword">as</span> np
+<span class="keyword">from</span> datetime <span class="keyword">import</span> datetime
+
+<span class="comment"># Plot tools</span>
+<span class="keyword">import</span> matplotlib.pylab <span class="keyword">as</span> plt
+<span class="keyword">import</span> seaborn <span class="keyword">as</span> sns
+<span class="keyword">from</span> matplotlib.colors <span class="keyword">import</span> LogNorm
+
+<span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split
+
+<span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier
+<span class="keyword">from</span> sklearn <span class="keyword">import</span> preprocessing
+<span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> log_loss
+<span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> make_scorer
+<span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> StratifiedShuffleSplit
+<span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> PCA
+
+<span class="keyword">from</span> keras.layers.advanced_activations <span class="keyword">import</span> PReLU
+<span class="keyword">from</span> keras.layers.core <span class="keyword">import</span> Dense, Dropout, Activation
+<span class="keyword">from</span> keras.layers.normalization <span class="keyword">import</span> BatchNormalization
+<span class="keyword">from</span> keras.models <span class="keyword">import</span> Sequential
+<span class="keyword">from</span> keras.utils <span class="keyword">import</span> np_utils
+
+<span class="keyword">from</span> copy <span class="keyword">import</span> deepcopy
+%matplotlib inline
+
+
+<span class="keyword">import</span> os
+<span class="comment">#当前目录</span>
+print(os.getcwd())
+
+trainDF = pd.read_csv(“train.csv<span class="string">")</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">trainDF.head()</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">print(trainDF.dtypes, </span>
+<span class="string">      trainDF.describe(include=['object', 'category']),</span>
+<span class="string">      trainDF.describe(include='float64'), sep=‘\n\n\n\n')</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string"># trainDF=trainDF[abs(trainDF["</span>Y<span class="string">"])&lt;100]  </span>
+<span class="string">trainDF.index=range(len(trainDF))</span>
+<span class="string">plt.plot(trainDF["</span>X<span class="string">"],trainDF["</span>Y<span class="string">"],'.')</span>
+<span class="string">plt.title('Before scaling')</span>
+<span class="string">plt.show()</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">cleanDF = trainDF[(trainDF['X']&lt;122)&amp;(trainDF['Y']&lt;90)]</span>
+<span class="string">cleanDF.index=range(len(cleanDF))</span>
+<span class="string">plt.plot(cleanDF["</span>X<span class="string">"],cleanDF["</span>Y<span class="string">"],'.')</span>
+<span class="string">plt.title('Before scaling')</span>
+<span class="string">plt.show()</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">print(trainDF.shape)</span>
+<span class="string">print(cleanDF.shape)</span>
+<span class="string">remove_len = trainDF.shape[0]-cleanDF.shape[0]</span>
+<span class="string">print("</span>we removed {} records which are {:<span class="number">.4</span>f}% of all records.”.format(remove_len,<span class="number">100</span>*remove_len/trainDF.shape[<span class="number">0</span>]))
+
+
+trainDF=cleanDF
+plt.figure(figsize=(<span class="number">12</span>,<span class="number">3</span>))
+
+plt.subplot(<span class="number">131</span>)
+sns.distplot(trainDF[<span class="string">'X'</span>])
+plt.title(<span class="string">'X'</span>)
+
+plt.subplot(<span class="number">132</span>)
+sns.distplot(trainDF[<span class="string">'Y'</span>])
+plt.title(<span class="string">'Y'</span>)
+
+plt.subplot(<span class="number">133</span>)
+sns.distplot(trainDF[<span class="string">'X'</span>])
+sns.distplot(trainDF[<span class="string">'Y'</span>])
+plt.title(‘X&amp;Y<span class="string">')</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">xy_scaler=preprocessing.StandardScaler()</span>
+<span class="string">xy_scaler.fit(trainDF[["X","Y"]])</span>
+<span class="string"></span>
+<span class="string">standardDF=pd.DataFrame(xy_scaler.transform(trainDF[["X","Y"]]),columns=['</span>X<span class="string">','</span>Y<span class="string">'])</span>
+<span class="string"></span>
+<span class="string">standardDF.describe()</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">standardDF=standardDF[abs(standardDF["Y"])&lt;100]  </span>
+<span class="string">standardDF.index=range(len(standardDF))</span>
+<span class="string">plt.plot(standardDF["X"],standardDF["Y"],'</span>.<span class="string">')</span>
+<span class="string">plt.title('</span>after scaling<span class="string">')</span>
+<span class="string">plt.show()</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">import seaborn as sns</span>
+<span class="string">plt.figure(figsize=(12,3))</span>
+<span class="string"></span>
+<span class="string">plt.subplot(131)</span>
+<span class="string">sns.distplot(standardDF['</span>X<span class="string">'])</span>
+<span class="string">plt.title('</span>X<span class="string">')</span>
+<span class="string"></span>
+<span class="string">plt.subplot(132)</span>
+<span class="string">sns.distplot(standardDF['</span>Y<span class="string">'])</span>
+<span class="string">plt.title('</span>Y<span class="string">')</span>
+<span class="string"></span>
+<span class="string">plt.subplot(133)</span>
+<span class="string">sns.distplot(standardDF['</span>X<span class="string">'])</span>
+<span class="string">sns.distplot(standardDF['</span>Y<span class="string">'])</span>
+<span class="string">plt.title(‘X&amp;Y'</span>)
+
+
+xy_scaler=preprocessing.StandardScaler()
+xy_scaler.fit(trainDF[[<span class="string">"X"</span>,<span class="string">"Y"</span>]])
+trainDF[[<span class="string">"X"</span>,<span class="string">"Y"</span>]]=xy_scaler.transform(trainDF[[<span class="string">"X"</span>,<span class="string">"Y"</span>]])
+
+<span class="comment"># remove the invalid value.</span>
+trainDF=trainDF[abs(trainDF[<span class="string">"Y"</span>])&lt;<span class="number">100</span>]  
+trainDF.index=range(len(trainDF))
+plt.plot(trainDF[<span class="string">"X"</span>],trainDF[<span class="string">"Y"</span>],<span class="string">'.'</span>)
+plt.title(<span class="string">'after scaling'</span>)
+plt.show()
+
+
+groups = trainDF.groupby(<span class="string">'Category'</span>)
+print(len(groups))
+
+
+<span class="comment"># Plot the hotmap for each crime category.</span>
+NX=<span class="number">100</span>
+NY=<span class="number">100</span>
+ii=<span class="number">1</span>
+plt.figure(figsize=(<span class="number">30</span>, <span class="number">30</span>))
+<span class="keyword">for</span> name, group <span class="keyword">in</span> groups:
+    plt.subplot(<span class="number">8</span>,<span class="number">5</span>,ii)
+    <span class="comment"># https://docs.scipy.org/doc/numpy/reference/generated/numpy.histogram2d.html</span>
+    histo, xedges, yedges = np.histogram2d(np.array(group.X),np.array(group.Y), bins=(NX,NY))
+    myextent  =[xedges[<span class="number">0</span>],xedges[<span class="number">-1</span>],yedges[<span class="number">0</span>],yedges[<span class="number">-1</span>]]
+    plt.imshow(histo.T, origin=<span class="string">'low'</span>, extent=myextent, interpolation=<span class="string">'nearest'</span>, aspect=<span class="string">'auto'</span>, norm=LogNorm())
+    plt.title(name)
+    ii+=<span class="number">1</span>
+<span class="keyword">del</span> groups
+
+
+<span class="function"><span class="keyword">def</span> <span class="title">parse_time</span><span class="params">(x)</span>:</span>
+    <span class="string">'''</span>
+<span class="string">    :param:</span>
+<span class="string">        x: e.g. 2015-05-13 23:53:00</span>
+<span class="string"></span>
+<span class="string">    :return:</span>
+<span class="string">        e.g. [23:53:00, 13, 5, 2015]</span>
+<span class="string">    '''</span>
+    <span class="comment"># Return a string representing the date, controlled by an explicit format string.</span>
+    DD=datetime.strptime(x,<span class="string">"%Y-%m-%d %H:%M:%S"</span>)
+    time=DD.hour  <span class="comment"># *60+DD.minute</span>
+    day=DD.day
+    month=DD.month
+    year=DD.year
+    <span class="keyword">return</span> time,day,month,year
+
+<span class="function"><span class="keyword">def</span> <span class="title">get_season</span><span class="params">(x)</span>:</span>
+    <span class="string">'''</span>
+<span class="string">    :param:</span>
+<span class="string">        x: the 'Month' of each records.</span>
+<span class="string"></span>
+<span class="string">    :return:</span>
+<span class="string">        e.g. If it belongs to fall, looks like[0, 1, 0, 0]</span>
+<span class="string">    '''</span>
+    summer=<span class="number">0</span>
+    fall=<span class="number">0</span>
+    winter=<span class="number">0</span>
+    spring=<span class="number">0</span>
+    <span class="keyword">if</span> (x <span class="keyword">in</span> [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>]):
+        summer=<span class="number">1</span>
+    <span class="keyword">if</span> (x <span class="keyword">in</span> [<span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]):
+        fall=<span class="number">1</span>
+    <span class="keyword">if</span> (x <span class="keyword">in</span> [<span class="number">11</span>, <span class="number">0</span>, <span class="number">1</span>]):
+        winter=<span class="number">1</span>
+    <span class="keyword">if</span> (x <span class="keyword">in</span> [<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]):
+        spring=<span class="number">1</span>
+    <span class="keyword">return</span> summer, fall, winter, spring
+
+
+<span class="function"><span class="keyword">def</span> <span class="title">parse_data</span><span class="params">(df,logodds,logoddsPA)</span>:</span>
+    <span class="string">'''</span>
+<span class="string">    :param:</span>
+<span class="string">        df: </span>
+<span class="string">        logodds: </span>
+<span class="string">            {'**street name1**': 0     -6.361807 # Here is the log-odds of each crime in this street. 39 intotal</span>
+<span class="string">                                 1     -2.343857</span>
+<span class="string">                                 2     -7.678566</span>
+<span class="string">                                 3     -8.018625</span>
+<span class="string">                                 4     -3.130616</span>
+<span class="string">                                 5     -5.309904</span>
+<span class="string">                                 6     -5.956141</span>
+<span class="string">                                 ... ,</span>
+<span class="string"></span>
+<span class="string">             '**street name2**': 0     -6.361807 </span>
+<span class="string">                                 1     -2.343857</span>
+<span class="string">                                 2     -7.678566</span>
+<span class="string">                                 3     -8.018625</span>
+<span class="string">                                 4     -3.130616</span>
+<span class="string">                                 5     -5.309904</span>
+<span class="string">                                 6     -5.956141</span>
+<span class="string">                                 ...,</span>
+<span class="string">             ...</span>
+<span class="string">             }</span>
+<span class="string">             ## we have 23191 streets.</span>
+<span class="string"></span>
+<span class="string">        logoddsPA:  </span>
+<span class="string">            {'0 Block of HARRISON ST': -13.685380232291987, # Here is the log-odds of each crime.</span>
+<span class="string">             '0 Block of 10TH AV': -12.075937763940264,</span>
+<span class="string">             '0 Block of 10TH ST': -9.793505261799897,</span>
+<span class="string">             '0 Block of 11TH ST': -9.814125688041068,</span>
+<span class="string">             ...</span>
+<span class="string">            }</span>
+<span class="string">            ## We have 23191 streets.</span>
+<span class="string"></span>
+<span class="string">    :return:</span>
+<span class="string">        features: The data frame after feature engineering.</span>
+<span class="string">        labels: The column category, used to train and test the classification.</span>
+<span class="string">    '''</span>
+    feature_list=df.columns.tolist()
+    <span class="keyword">if</span> <span class="string">"Descript"</span> <span class="keyword">in</span> feature_list:
+        feature_list.remove(<span class="string">"Descript"</span>)
+    <span class="keyword">if</span> <span class="string">"Resolution"</span> <span class="keyword">in</span> feature_list:
+        feature_list.remove(<span class="string">"Resolution"</span>)
+    <span class="keyword">if</span> <span class="string">"Category"</span> <span class="keyword">in</span> feature_list:
+        feature_list.remove(<span class="string">"Category"</span>)
+    <span class="keyword">if</span> <span class="string">"Id"</span> <span class="keyword">in</span> feature_list:
+        feature_list.remove(<span class="string">"Id"</span>)
+    cleanData=df[feature_list]
+    cleanData.index=range(len(df))
+
+    print(<span class="string">"Creating address features"</span>)
+    address_features=cleanData[<span class="string">"Address"</span>].apply(<span class="keyword">lambda</span> x: logodds[x])
+    address_features.columns=[<span class="string">"logodds"</span>+str(x) <span class="keyword">for</span> x <span class="keyword">in</span> range(len(address_features.columns))]
+    print(<span class="string">"Parsing dates"</span>)
+
+    cleanData[<span class="string">"Time"</span>], cleanData[<span class="string">"Day"</span>], cleanData[<span class="string">"Month"</span>], cleanData[<span class="string">"Year"</span>]=zip(*cleanData[<span class="string">"Dates"</span>].apply(parse_time))
+    days = [<span class="string">'Monday'</span>, <span class="string">'Tuesday'</span>, <span class="string">'Wednesday'</span>, <span class="string">'Thursday'</span>, <span class="string">'Friday'</span>, <span class="string">'Saturday'</span>, <span class="string">'Sunday'</span>]
+
+    print(<span class="string">"Creating one-hot variables"</span>)
+    <span class="comment"># prefix : string, list of strings, or dict of strings, default None</span>
+    <span class="comment"># String to append DataFrame column names. Pass a list with length equal to the number of columns when calling get_dummies on a DataFrame. </span>
+    <span class="comment"># Alternatively, prefix can be a dictionary mapping column names to prefixes.</span>
+    dummy_ranks_PD = pd.get_dummies(cleanData[<span class="string">'PdDistrict'</span>], prefix=<span class="string">'PD'</span>)
+    dummy_ranks_DAY = pd.get_dummies(cleanData[<span class="string">"DayOfWeek"</span>], prefix=<span class="string">'DAY'</span>)
+    cleanData[<span class="string">"IsInterection"</span>]=cleanData[<span class="string">"Address"</span>].apply(<span class="keyword">lambda</span> x: <span class="number">1</span> <span class="keyword">if</span> <span class="string">"/"</span> <span class="keyword">in</span> x <span class="keyword">else</span> <span class="number">0</span>)
+    cleanData[<span class="string">"logoddsPA"</span>]=cleanData[<span class="string">"Address"</span>].apply(<span class="keyword">lambda</span> x: logoddsPA[x])
+
+    print(<span class="string">"droping processed columns"</span>)
+    cleanData=cleanData.drop(<span class="string">"PdDistrict"</span>,axis=<span class="number">1</span>)
+    cleanData=cleanD、、、、、、、、ata.drop(<span class="string">"DayOfWeek"</span>,axis=<span class="number">1</span>)
+    cleanData=cleanData.drop(<span class="string">"Address"</span>,axis=<span class="number">1</span>)
+    cleanData=cleanData.drop(<span class="string">"Dates"</span>,axis=<span class="number">1</span>)
+    feature_list=cleanData.columns.tolist()
+
+    print(<span class="string">"joining one-hot features"</span>)
+    <span class="comment"># Purely integer-location based indexing for selection by position.</span>
+    <span class="comment"># .iloc[] is primarily integer position based (from 0 to length-1 of the axis)</span>
+    features = cleanData[feature_list].join(dummy_ranks_PD.iloc[:,:]).join(dummy_ranks_DAY.iloc[:,:]).join(address_features.iloc[:,:])
+
+    print(<span class="string">"creating new features"</span>)
+    features[<span class="string">"IsDup"</span>]=pd.Series(features.duplicated()|features.duplicated(keep=<span class="string">"last"</span>)).apply(int)
+    features[<span class="string">"Awake"</span>]=features[<span class="string">"Time"</span>].apply(<span class="keyword">lambda</span> x: <span class="number">1</span> <span class="keyword">if</span> (x==<span class="number">0</span> <span class="keyword">or</span> (x&gt;=<span class="number">8</span> <span class="keyword">and</span> x&lt;=<span class="number">23</span>)) <span class="keyword">else</span> <span class="number">0</span>)
+    features[<span class="string">"Summer"</span>], features[<span class="string">"Fall"</span>], features[<span class="string">"Winter"</span>], features[<span class="string">"Spring"</span>]=zip(*features[<span class="string">"Month"</span>].apply(get_season))
+    <span class="keyword">if</span> <span class="string">"Category"</span> <span class="keyword">in</span> df.columns:
+        labels = df[<span class="string">"Category"</span>].astype(<span class="string">'category'</span>)
+    <span class="keyword">else</span>:
+        labels=<span class="literal">None</span>
+    <span class="keyword">return</span> features,labels
+
+
+addresses=sorted(trainDF[<span class="string">"Address"</span>].unique())
+categories=sorted(trainDF[<span class="string">"Category"</span>].unique())
+
+C_counts=trainDF.groupby([<span class="string">"Category"</span>]).size()  
+A_C_counts=trainDF.groupby([<span class="string">"Address"</span>,<span class="string">"Category"</span>]).size()
+A_counts=trainDF.groupby([<span class="string">"Address"</span>]).size()
+
+logodds={}
+logoddsPA={}
+
+MIN_CAT_COUNTS=<span class="number">2</span>
+default_logodds=np.log(C_counts/len(trainDF))-np.log(<span class="number">1.0</span>-C_counts/float(len(trainDF)))
+<span class="keyword">for</span> addr <span class="keyword">in</span> addresses:
+    PA=A_counts[addr]/float(len(trainDF))
+    logoddsPA[addr]=np.log(PA)-np.log(<span class="number">1.</span>-PA)
+    logodds[addr]=deepcopy(default_logodds)
+    <span class="keyword">for</span> cat <span class="keyword">in</span> A_C_counts[addr].keys():
+        <span class="keyword">if</span> (A_C_counts[addr][cat]&gt;MIN_CAT_COUNTS) <span class="keyword">and</span> A_C_counts[addr][cat]&lt;A_counts[addr]:
+            PA=A_C_counts[addr][cat]/float(A_counts[addr])
+            logodds[addr][categories.index(cat)]=np.log(PA)-np.log(<span class="number">1.0</span>-PA)
+    logodds[addr]=pd.Series(logodds[addr])
+    logodds[addr].index=range(len(categories))
+
+
+plt.hist(logoddsPA.values())
+
+
+features, labels=parse_data(trainDF,logodds,logoddsPA)
+
+
+<span class="keyword">print</span> (features.columns.tolist(), len(features.columns), sep=‘\n\n<span class="string">')</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">def plot_those_features(feature_list, data_df):</span>
+<span class="string">    '</span><span class="string">''</span>
+    :param:
+        feature_list: The features you want to compare.
+        data_df: The dataframe contain those features.
+
+    <span class="string">'''</span>
+<span class="string">    features_list_df = data_df[feature_list]</span>
+<span class="string">    sea_x = [i[0] for i in features_list_df.sum(axis=0).items()]</span>
+<span class="string">    sea_y = [i[1] for i in features_list_df.sum(axis=0).items()]</span>
+<span class="string">    idx = np.arange(len(sea_x))</span>
+<span class="string">    sns.barplot(idx, sea_y)</span>
+<span class="string">    plt.xticks(idx, sea_x)</span>
+<span class="string">    plt.xticks(rotation=’30')</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string"># seasons as a predictor</span>
+<span class="string">seasons = ['Summer', 'Fall', 'Winter', 'Spring']</span>
+<span class="string">plot_those_features(seasons,features)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">sns.countplot('Awake', data=features)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">sns.countplot('IsDup', data=features)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string"># DayOfWeek as a predictor</span>
+<span class="string">week_day = ['DAY_Monday', 'DAY_Tuesday', 'DAY_Wednesday','DAY_Thursday', 'DAY_Friday','DAY_Saturday', 'DAY_Sunday']</span>
+<span class="string">plot_those_features(week_day,features)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string"># districts as a predictor</span>
+<span class="string">districts = ['PD_BAYVIEW', 'PD_CENTRAL', 'PD_INGLESIDE', </span>
+<span class="string">             'PD_MISSION', 'PD_NORTHERN', 'PD_PARK', 'PD_RICHMOND', </span>
+<span class="string">             'PD_SOUTHERN', 'PD_TARAVAL', 'PD_TENDERLOIN']</span>
+<span class="string">plot_those_features(districts,features)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string"># num_feature_list=["Time","Day","Month","Year","DayOfWeek"]</span>
+<span class="string">collist=features.columns.tolist()</span>
+<span class="string">scaler = preprocessing.StandardScaler()</span>
+<span class="string">scaler.fit(features)</span>
+<span class="string">features[collist]=scaler.transform(features)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">new_PCA=PCA(n_components=50)</span>
+<span class="string">new_PCA.fit(features)</span>
+<span class="string">plt.plot(new_PCA.explained_variance_ratio_)</span>
+<span class="string">plt.yscale('log')</span>
+<span class="string">plt.title("PCA explained ratio of features")</span>
+<span class="string">print(new_PCA.explained_variance_ratio_)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">sss = StratifiedShuffleSplit(train_size=0.5, random_state=42)</span>
+<span class="string">for train_index, test_index in sss.split(features, labels):</span>
+<span class="string">    features_train,features_test=features.iloc[train_index], features.iloc[test_index]</span>
+<span class="string">    labels_train,labels_test=labels[train_index], labels[test_index]</span>
+<span class="string"></span>
+<span class="string">features_train.index=range(len(features_train))</span>
+<span class="string">features_test.index=range(len(features_test))</span>
+<span class="string"></span>
+<span class="string">labels_train.index=range(len(labels_train))</span>
+<span class="string">labels_test.index=range(len(labels_test))</span>
+<span class="string"></span>
+<span class="string">features.index=range(len(features))</span>
+<span class="string">labels.index=range(len(labels))</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">def build_and_fit_model(X_train,y_train,X_test=None,y_test=None,hn=32,dp=0.5,layers=1,epochs=1,batches=64,verbose=0):</span>
+<span class="string">    input_dim=X_train.shape[1]</span>
+<span class="string">    output_dim=len(labels_train.unique())</span>
+<span class="string">    Y_train=np_utils.to_categorical(y_train.cat.rename_categories(range(len(y_train.unique()))))</span>
+<span class="string">    print(output_dim)</span>
+<span class="string">    model = Sequential()</span>
+<span class="string">    # Core Layers- Dense</span>
+<span class="string">    model.add(Dense(hn, input_shape=(input_dim,), kernel_initializer='glorot_uniform'))</span>
+<span class="string">    # Advanced Activations Layers - PRuLU </span>
+<span class="string">    # https://github.com/keras-team/keras/blob/master/keras/layers/advanced_activations.py#L59</span>
+<span class="string">    model.add(PReLU(input_shape=(hn,)))</span>
+<span class="string">    # Core Layers - Dropout</span>
+<span class="string">    model.add(Dropout(dp))</span>
+<span class="string">    print("Neural net has been constructed.")</span>
+<span class="string"></span>
+<span class="string">    for i in range(layers):</span>
+<span class="string">        model.add(Dense(hn, input_shape=(hn,), kernel_initializer='glorot_uniform'))</span>
+<span class="string">        model.add(PReLU(input_shape=(hn,)))</span>
+<span class="string">        # Normalization Layers - BatchNormalization</span>
+<span class="string">        model.add(BatchNormalization())</span>
+<span class="string">        model.add(Dropout(dp))</span>
+<span class="string"></span>
+<span class="string">    model.add(Dense(output_dim, input_shape=(hn,), init='glorot_uniform'))</span>
+<span class="string">    model.add(Activation('softmax'))</span>
+<span class="string"></span>
+<span class="string">    # configure the models for training</span>
+<span class="string">    model.compile(loss='categorical_crossentropy', optimizer='adam')</span>
+<span class="string">    print("Neural net has been compiled.")</span>
+<span class="string"></span>
+<span class="string">    if X_test is not None:</span>
+<span class="string">        Y_test = np_utils.to_categorical(y_test.cat.rename_categories(range(len(y_test.unique())+1)))</span>
+<span class="string">        fitting = model.fit(X_train, Y_train, epochs=epochs, batch_size=batches, verbose=verbose, validation_data=(X_test,Y_test))</span>
+<span class="string">        test_score = log_loss(y_test, model.predict_proba(X_test,verbose=0), labels=y_train.unique().tolist())</span>
+<span class="string">    else:</span>
+<span class="string">        #model.fit(X_train, Y_train, epochs=epochs, batch_size=batches, verbose=verbose)</span>
+<span class="string">        fitting = model.fit(X_train, Y_train, epochs=epochs, batch_size=batches, verbose=verbose, validation_split=0.5)</span>
+<span class="string">        test_score = 0</span>
+<span class="string">    print("Fitting done")</span>
+<span class="string">    return test_score, fitting,  model</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">N_EPOCHS=20  #20</span>
+<span class="string">N_HN=128  # 128</span>
+<span class="string">N_LAYERS=1</span>
+<span class="string">DP=0.5</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">score, fitting, model = build_and_fit_model(features_train.values, labels_train,</span>
+<span class="string">                                            X_test=features_test.values, y_test=labels_test, </span>
+<span class="string">                                            hn=N_HN, layers=N_LAYERS, epochs=N_EPOCHS, verbose=2, dp=DP)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">print("all", log_loss(labels, model.predict_proba(features.values,verbose=0)))</span>
+<span class="string">print("train", log_loss(labels_train, model.predict_proba(features_train.values,verbose=0)))</span>
+<span class="string">print("test", log_loss(labels_test, model.predict_proba(features_test.values,verbose=0),labels = labels_train.unique().tolist()))</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">plt.plot(fitting.history['val_loss'],label="validation")</span>
+<span class="string">plt.plot(fitting.history['loss'],label="train")</span>
+<span class="string"># plt.xscale('log')</span>
+<span class="string">plt.legend()</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">testDF=pd.read_csv("test.csv")</span>
+<span class="string">testDF[["X","Y"]]=xy_scaler.transform(testDF[["X","Y"]])</span>
+<span class="string">#set outliers to 0</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">testDF["X"]=testDF["X"].apply(lambda x: 0 if abs(x)&gt;5 else x)</span>
+<span class="string">testDF["Y"]=testDF["Y"].apply(lambda y: 0 if abs(y)&gt;5 else y)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">new_addresses=sorted(testDF["Address"].unique())</span>
+<span class="string">new_A_counts=testDF.groupby("Address").size()</span>
+<span class="string">only_new=set(new_addresses+addresses)-set(addresses)</span>
+<span class="string">only_old=set(new_addresses+addresses)-set(new_addresses)</span>
+<span class="string">in_both=set(new_addresses).intersection(addresses)</span>
+<span class="string">for addr in only_new:</span>
+<span class="string">    PA=new_A_counts[addr]/float(len(testDF)+len(trainDF))</span>
+<span class="string">    logoddsPA[addr]=np.log(PA)-np.log(1.-PA)</span>
+<span class="string">    logodds[addr]=deepcopy(default_logodds)</span>
+<span class="string">    logodds[addr].index=range(len(categories))</span>
+<span class="string">for addr in in_both:</span>
+<span class="string">    PA=(A_counts[addr]+new_A_counts[addr])/float(len(testDF)+len(trainDF))</span>
+<span class="string">    logoddsPA[addr]=np.log(PA)-np.log(1.-PA)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">features_sub, _=parse_data(testDF,logodds,logoddsPA)</span>
+<span class="string"># scaler.fit(features_test)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">collist=features_sub.columns.tolist()</span>
+<span class="string">print(collist)</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">features_sub[collist]=scaler.transform(features_sub[collist])</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">predDF=pd.DataFrame(model.predict_proba(features_sub.values,verbose=0),columns=sorted(labels.unique()))</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">predDF.head()</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">end = time()</span>
+<span class="string">print("{} minutes used”.format((end-begin)/60))</span>
+<span class="string"></span>
+<span class="string"></span>
+<span class="string">predDF.to_csv(“crimeSF_NN_logodds_py3_1.csv",index_label="Id",na_rep="0")</span></code></pre>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 Terry Lu<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
